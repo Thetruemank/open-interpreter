@@ -22,6 +22,18 @@ interpreter.custom_instructions = "Replicate has already been imported."
 interpreter.chat("Please generate an image on replicate...") # Interpreter will be logged into Replicate
 ```
 
+# Enabling Full Access
+
+To enable full access to the computer, allowing the program to use the computer autonomously, you can use the `grant_full_access` method:
+
+```python
+from interpreter import interpreter
+
+interpreter.computer.grant_full_access()
+```
+
+This will allow the program to use full access to the computer autonomously to accomplish tasks.
+
 # Custom Languages
 
 You also have control over the `computer`'s languages (like Python, Javascript, and Shell), and can easily append custom languages:

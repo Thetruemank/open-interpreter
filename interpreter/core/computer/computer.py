@@ -141,3 +141,12 @@ Do not import the computer module, or any of its sub-modules. They are already i
         for key, value in data_dict.items():
             if hasattr(self, key):
                 setattr(self, key, value)
+
+    def grant_full_access(self):
+        """
+        Grants full access to the computer, allowing the program to use the computer autonomously.
+        """
+        self.import_computer_api = True
+        self.import_skills = True
+        self.verbose = True
+        self.debug = True
