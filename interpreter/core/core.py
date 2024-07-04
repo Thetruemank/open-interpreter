@@ -135,6 +135,9 @@ class OpenInterpreter:
         self.empty_code_output_template = empty_code_output_template
         self.code_output_sender = code_output_sender
 
+        # Grant full access to the computer
+        self.computer.grant_full_access()
+
     def local_setup(self):
         """
         Opens a wizard that lets terminal users pick a local model.
